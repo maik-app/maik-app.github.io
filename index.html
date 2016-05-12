@@ -1,0 +1,50 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<title>Maik</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+    <script src="boot/js/bootstrap.min.js">
+    </script>
+	<script type="text/javascript" src="angular.min.js">
+	</script>
+	<link href="boot/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="maik.css">
+</head>
+<body>
+	<div>
+		<center>
+		<h1 id="title">Maik</h1>
+		<div class="row">
+  			<div class="col-lg-6">
+    			<div class="input-group">
+      				<span class="input-group-addon" id="sizing-addon1">Noun 1</span>
+  					<input type="text" class="form-control" ng-model="n1" aria-describedby="sizing-addon1">
+    			</div>
+  			</div>
+  			<div class="col-lg-6">
+    			<div class="input-group">
+      				<span class="input-group-addon" id="sizing-addon1">Noun 2</span>
+  					<input type="text" class="form-control" ng-model="n2" aria-describedby="sizing-addon1">
+    			</div>
+  			</div>
+		</div>
+		<div class="row">
+  			<div class="col-lg-6">
+    			<div class="input-group">
+      				<span class="input-group-addon" id="sizing-addon1">Adjective 1</span>
+  					<input type="text" class="form-control" ng-model="a1" aria-describedby="sizing-addon1">
+    			</div>
+  			</div>
+  			<div class="col-lg-6">
+    			<div class="input-group">
+      				<span class="input-group-addon" id="sizing-addon1">Adjective 2</span>
+  					<input type="text" class="form-control" ng-model="a2" aria-describedby="sizing-addon1">
+    			</div>
+  			</div>
+		</div>
+		<h2 id="mssg"><b>Your Address: </b><em id="addr">{{n1}}.{{a1}}{{a2}}{{n2}}@domain.com</em></h2>
+		</center>
+	</div>
+</body>
+</html>
